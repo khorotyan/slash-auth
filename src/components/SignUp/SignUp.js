@@ -7,15 +7,15 @@ import {
   EmailValid,
   PasswordValid,
   PasswordsMatch,
-} from "../../../utils/paramValidator";
-import { Input, Button, GoogleButton } from "../../../atoms";
-import { SnackbarContext } from "../../../contexts/snackbarContext";
-import { UserContext } from "../../../contexts/userContext";
-import apiRequest from "../../../utils/apiRequest";
+} from "../../utils/paramValidator";
+import { Input, Button, GoogleButton } from "../../atoms";
+import { SnackbarContext } from "../../contexts/snackbarContext";
+import { UserContext } from "../../contexts/userContext";
+import apiRequest from "../../utils/apiRequest";
 
 import "./SignUp.scss";
 
-import Logo from "../../../assets/images/General/logo.webp";
+import Logo from "../../assets/images/General/logo.webp";
 
 const fieldNames = Object.freeze({
   firstname: "firstname",

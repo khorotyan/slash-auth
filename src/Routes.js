@@ -1,10 +1,8 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
-import Home from "./components/Home";
-import Profile from "./components/Profile";
-import { SignUp, SignIn } from "./components/Authentication";
-import PrivateRoute from "./components/helpers/PrivateRoute";
+import SignIn from "./components/SignIn";
+import SignUp from "./components/SignUp";
 import CombinedContext from "./contexts/combinedContext";
 
 const Routes = () => {
@@ -14,10 +12,6 @@ const Routes = () => {
         <Switch>
           <Route path="/register" exact component={SignUp} />
           <Route path="/login" exact component={SignIn} />
-
-          <PrivateRoute exact path="/profile" component={Profile} />
-
-          <Route path="/" component={Home} />
         </Switch>
       </Router>
     </CombinedContext>

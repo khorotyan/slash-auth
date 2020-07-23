@@ -1,15 +1,15 @@
 import React, { useState, useContext } from "react";
 import { useHistory, Link } from "react-router-dom";
 
-import { Input, Button, GoogleButton } from "../../../atoms";
-import apiRequest from "../../../utils/apiRequest";
-import { SnackbarContext } from "../../../contexts/snackbarContext";
-import { UserContext } from "../../../contexts/userContext";
-import { EmailValid } from "../../../utils/paramValidator";
+import { Input, Button, GoogleButton } from "../../atoms";
+import apiRequest from "../../utils/apiRequest";
+import { SnackbarContext } from "../../contexts/snackbarContext";
+import { UserContext } from "../../contexts/userContext";
+import { EmailValid } from "../../utils/paramValidator";
 
 import "./SignIn.scss";
 
-import Logo from "../../../assets/images/General/logo.webp";
+import Logo from "../../assets/images/General/logo.webp";
 
 const fieldNames = Object.freeze({
   email: "email",

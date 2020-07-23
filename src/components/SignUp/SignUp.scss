@@ -1,14 +1,14 @@
-@import "../../../constants/styles/colors";
+@import "../../constants/styles/colors";
 
-.SignIn {
+.SignUp {
   display: flex;
   width: 100%;
   height: 100vh;
 
   &__Info {
     width: 50vw;
-    height: 100%;
-    background-image: url("../../../assets/images/Authentication/background.jpg");
+    height: 100vh;
+    background-image: url("../../assets/images/Authentication/background.jpg");
     background-size: cover;
     background-position: 0 0;
     background-repeat: no-repeat;
@@ -38,7 +38,7 @@
 
   &__Actions {
     width: 50vw;
-    height: 100%;
+    height: 100vh;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -102,7 +102,7 @@
           }
         }
 
-        &__SignUp {
+        &__SignIn {
           font-size: 1.3rem;
           font-weight: 400;
           color: $secondary_text_light_color;
